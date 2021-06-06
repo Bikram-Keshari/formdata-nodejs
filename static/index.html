@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js" type="module" async></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <br />
+          <br />
+          <br />
+          <form>
+            <div class="form-group">
+              <input
+                type="fullName"
+                class="form-control"
+                placeholder="Enter full name"
+                id="fullName"
+                required
+              />
+            </div>
+            <div class="custom-file">
+              <input
+                type="file"
+                class="custom-file-input"
+                id="customFileDP"
+                required
+                multiple
+              />
+              <label class="custom-file-label" for="customFileDP"
+                >Choose DP (Max 2 JPG)</label
+              >
+            </div>
+            <div class="custom-file">
+              <input
+                type="file"
+                class="custom-file-input"
+                id="customFileSign"
+                required
+                multiple
+              />
+              <label class="custom-file-label" for="customFileSign"
+                >Choose Signature (Max 3 JPG)</label
+              >
+            </div>
+            <br />
+            <br />
+            <button type="submit" class="btn btn-primary">Upload</button>
+          </form>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <br />
+          <br />
+          <br />
+          <div class="btn-group">
+            <button type="button" class="btn btn-success" id="jsonData">
+              Upload JSON
+            </button>
+            <button type="button" class="btn btn-warning" id="formData">
+              Upload Formdata
+            </button>
+            <button type="button" class="btn btn-danger" id="fileData">
+              Upload Filedata
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+  </body>
+</html>
